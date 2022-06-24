@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        TOKEN
+    </div>
+    Lista de Tokens generados:
+    <div id="listaToken">
+        <p><%= //nlistaTokens %></p>
+    </div>
+    Token actual:
+    <div id="token">
+        <p id="ptoken"></p>
+        <p><%= token %></p>
+    </div>
+    Tiempo restante:
+    <div id="temporizador">60</div>
+    <% //ngenerar.conteoSegundos() %>
+    <% //ngenerar.conteoSegundos(); %>
+
+    
+
+  
+    <!-- <script type="text/javascript">
+        $(document).ready(function(){
+            setInterval(function(){
+                $('#token').load('token.ejs');
+            }, 1000)
+        })
+    </script> -->
+    <script type="text/javaacript" src="../routes/routes.js"></script>
+    <script type="text/javascript">   
+        var stoken = '<%-token%>';
+        document.getElementById("token").innerHTML=stoken;
+        /*
+        
+        var exttoken;
+        let listaTokens = [];
+        var token = Math.floor(Math.random()*(999999-100000))+100000;
+        console.log('El token actual arriba es: ',token);
+        var tokenG;
+        var tiempoG;
+        listaTokens.push(token);
+        
+        function Temporizador(id, inicio, final, idtoken, token, idlistatoken, listatoken){
+            this.id=id;
+            this.inicio=inicio;
+            this.final=final;
+            this.contador=this.inicio;
+            this.idtoken=idtoken;
+            this.token=token;
+            this.idlistatoken=idlistatoken;
+            this.listatoken=listatoken;
+            this.conteoSegundos = function(){                
+                if(this.contador == this.final-1){
+                    this.contador = inicio;
+                    var token = Math.floor(Math.random()*(999999-100000))+100000;
+                    listatoken.push(token);
+                    this.listatoken=listatoken;
+                    this.token = token;          
+                }
+                tiempoG = this.contador;
+                tokenG = this.token;
+                listaTokensG = this.listatoken
+                document.getElementById(this.id).innerHTML = this.contador--;
+                document.getElementById(this.idtoken).innerHTML=this.token;
+                document.getElementById(this.idlistatoken).innerHTML=this.listatoken;
+                exttoken = this.token;
+                console.log('El token actual dentro es: ', exttoken);
+            
+                setTimeout(this.conteoSegundos.bind(this), 1000);
+            }
+            this.getToken = function(){
+                return token;
+            }
+        }
+        
+       
+
+        let temporizador = new Temporizador("temporizador", 6, 0, "token", token, "listaToken", listaTokens);
+        //let temporizadorG = new Temporizador("temporizador", tiempoG, 0, "token", tokenG, "listaToken", listaTokensG);        
+        if(verify==0){
+            console.log('El token actual fuera es: ',token);
+            temporizador.conteoSegundos();            
+            verify = !verify;
+        }else{
+
+        }*/
+              
+
+        //const token = 8;
+        //document.getElementById("token").innerHTML = token;
+        //document.getElementById("token").innerHTML = temporizador.token;
+        //temporizador.conteoSegundos();        
+        //document.write("hola");        
+    </script>
+</body>
+</html>
